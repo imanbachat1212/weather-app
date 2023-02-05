@@ -51,7 +51,7 @@ export function App() {
 
 
   const checkWeather = async (Location) => {
-    const { data } = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${Location}&days=5&aqi=no&alerts=no`)
+    const { data } = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${Location}&days=5&aqi=no&alerts=no`)
     setWeatherData(data);
     console.log(data);
   }
