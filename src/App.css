@@ -1,38 +1,190 @@
-.App {
+.container{
+  max-width: 1080px;
+  margin: 20px auto;
+  flex-direction: row;
+
+}
+
+form{
   text-align: center;
+  margin-top: 20px;
+}
+input{
+  border-radius: 20px;
+  padding: 10px 10px;
+  
+  background-color: transparent;
+  color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  margin-left: 10%;
+  color: #232222;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+ 
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 520px;
+  margin: 1em;
+  overflow: hidden;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.air{
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 90%;
+  margin-left: 10%;}
+
+ 
+
+
+
+
+.real, .humidity{
+  display: flex;
+  gap: 30px;
+  padding-left: 20px;
+  font-size: 20px;
+  text-align: start;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  margin-top: -20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title{
+  font-weight: 100px;
+  font-size: 20px;
+  padding-left: 20px;
+  text-align: start;
+  padding-bottom: 0px;
+}
+
+.weather-icon,.weatherimg{
+position: relative;
+
+padding-top: 10px;
+width: 100px; 
+}
+.temp-one{
+  font-size: 30px;
+  height: 10px;
+  font-style: bold;
+}
+span{
+  display: flex;
+  padding-left: 20px;
+  font-style: bold;
+}
+
+.forecast{
+display: flex;
+position: absolute;
+top: 60%;
+left: 5%;
+width: 90%;
+margin-left: 10%;
+color: #232222;
+background: rgba(0, 0, 0, 0.3);
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.18);
+color: white;
+padding: 2em;
+border-radius: 30px;
+width: 100%;
+max-width: 920px;
+margin: 1em;
+overflow: hidden;
+gap: 70px;
+
+}
+
+.fcd-data {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+ 
+  
 }
 
-.App-link {
-  color: #61dafb;
+.fcd-data p{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.details{
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media (max-width:1100px){
+  .top{
+    position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+  height: 70%;
+  margin-left: 10%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .air{
+    position: absolute;
+    left:0%;
+    top: 50%;
+    width: 50%;
+    margin-left: 10%;
+
 }
+.title {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+.real, .humidity{
+  display: block;
+  gap: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  text-align: start;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  margin-top: -1px;
+}
+span{
+  display: inline;
+  padding-left: 10px;
+  font-style: bold;
+ 
+}
+
+}
+@media (max-width:668px){
+  .title{
+    font-size: 15px;
+  }
+  .air{
+    width: auto;
+  }
+  .weather-icon{
+ padding-left: 20%;
+}
+.temp-one{
+  margin-top: 10px;
+  padding-left: 20%;
+}}
+
+
