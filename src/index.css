@@ -5,11 +5,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   color: antiquewhite;
-  background-image: url("https://media2.giphy.com/media/UoxwvELuSl8Dnc4LSz/giphy.gif?cid=ecf05e470bxr340wutym0i3ip6dh6hp98uq9zgf858dl8r6g&rid=giphy.gif&ct=g");
+  background-image: url("https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?cs=srgb&dl=pexels-johannes-plenio-1118873.jpg&fm=jpg");
   background-size: cover;
-
-
+  /* background-repeat:no-repeat ; */
+  /* background-repeat:round; */
+ 
+ 
+ 
+ 
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
